@@ -1,0 +1,131 @@
+/* TAG */
+body {
+  background-image: url("../assets/home/background-home-desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+}
+
+/* CLASS */
+
+.top-container {
+  height: 96px;
+  margin-top: 35px;
+  position: relative;
+}
+
+.logo-container {
+  width: 200px;
+  height: 96px;
+  display: flex;
+  align-items: center;
+  float: left;
+}
+
+hr {
+  position: absolute;
+  top: 40px;
+  right: 790px;
+  width: 473px;
+  z-index: 1;
+  border: 1px 0 0 0;
+  opacity: 0.25;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  margin-left: 40px;
+}
+
+.navbar {
+  float: right;
+  width: 830px;
+  height: 96px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  position: relative;
+}
+
+.navigations {
+  font-size: 16px;
+  margin-right: 220px;
+}
+
+.current {
+  width: 70px;
+  height: 3px;
+  background-color: #ffffff;
+  position: absolute;
+  right: 638px;
+  top: 93px;
+}
+
+.navigations > a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-right: 40px;
+  word-spacing: 11px;
+}
+
+.bottom-container {
+  height: 450px;
+  margin-top: 245px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.description {
+  width: 450px;
+  height: 382px;
+  margin-left: 165px;
+}
+
+.first-line {
+  color: #d0d6f9;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  margin: 10px 0;
+  letter-spacing: 4.725px;
+}
+
+.second-line {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-family: "Bellefair", serif;
+  font-size: 150px;
+  margin: 10px 0;
+}
+
+.third-line {
+  color: #d0d6f9;
+  font-size: 18px;
+  font-family: "Barlow", sans-serif;
+  margin: 10px 0;
+  width: 444px;
+  line-height: 32px;
+}
+
+.explore {
+  width: 274px;
+  height: 274px;
+  background-color: #ffffff;
+  color: #0b0d17;
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  margin-right: 165px;
+  margin-top: 92px;
+}
+
+/* ID */
