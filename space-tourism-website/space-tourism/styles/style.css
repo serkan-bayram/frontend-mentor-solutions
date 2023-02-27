@@ -57,15 +57,6 @@ hr {
   margin-right: 220px;
 }
 
-.current {
-  width: 70px;
-  height: 3px;
-  background-color: #ffffff;
-  position: absolute;
-  right: 638px;
-  top: 93px;
-}
-
 .navigations > a {
   text-decoration: none;
   color: #ffffff;
@@ -126,6 +117,136 @@ hr {
   align-items: center;
   margin-right: 165px;
   margin-top: 92px;
+}
+
+.destination-moon {
+  background-image: url("../assets/destination/background-destination-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.middle-container {
+  margin-top: 110px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+
+.middle-heading {
+  margin: 0 0 0px 172px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 4.725px;
+  margin-left: 172px;
+}
+
+.middle-heading-number {
+  opacity: 0.25;
+  margin-right: 28px;
+}
+
+.destination-bottom-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  height: 500px;
+  position: relative;
+}
+
+.planet {
+  width: 445px;
+  height: 445px;
+  margin-left: 230px;
+}
+
+.right-menu {
+  width: 620px;
+}
+
+.menu-navigations {
+  position: absolute;
+  bottom: 510px;
+}
+
+.menu-navigation {
+  text-decoration: none;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  letter-spacing: 2.7px;
+  margin-right: 35px;
+}
+
+.menu-navigation-current {
+  text-decoration: none;
+  letter-spacing: 2.7px;
+
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Barlow Condensed", sans-serif;
+  margin-right: 35px;
+  border-bottom: solid white 3px;
+  padding-bottom: 12px;
+
+  color: #ffffff;
+}
+
+.current-page {
+  border-bottom: solid white 3px;
+  padding-bottom: 35px;
+}
+
+.menu-heading {
+  margin-top: 40px;
+  font-size: 100px;
+  color: #ffffff;
+  font-family: "Bellefair", sans-serif;
+  text-transform: uppercase;
+}
+
+.menu-description {
+  font-size: 18px;
+  color: #d0d6f9;
+  font-family: "Barlow", sans-serif;
+  width: 444px;
+  line-height: 32px;
+}
+
+.menu-hr {
+  position: absolute;
+  top: 330px;
+  right: 180px;
+  width: 444px;
+  z-index: 1;
+  border: 1px 0 0 0;
+  opacity: 0.25;
+}
+
+.distance-travel {
+  display: flex;
+  margin-top: 80px;
+}
+
+.distance {
+  margin-right: 79px;
+}
+
+.distance > p:first-child,
+.travel > p:first-child {
+  font-family: "Barlow Condensed", sans-serif;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2.3625px;
+}
+
+.distance > p:nth-child(2),
+.travel > p:nth-child(2) {
+  margin-top: 12px;
+  font-family: "Bellefair", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 28px;
 }
 
 /* ID */
