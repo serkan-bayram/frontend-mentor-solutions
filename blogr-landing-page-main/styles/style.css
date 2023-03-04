@@ -1,0 +1,173 @@
+/* root */
+
+:root {
+  --primary-color-1: hsl(356, 100%, 66%);
+  --primary-color-2: hsl(355, 100%, 74%);
+  --primary-color-3: hsl(208, 49%, 24%);
+
+  --neutral-color-1: hsl(0, 0%, 100%);
+  --neutral-color-2: hsl(240, 2%, 79%);
+  --neutral-color-3: hsl(207, 13%, 34%);
+  --neutral-color-4: hsl(240, 10%, 16%);
+
+  --gradient-1: hsl(13, 100%, 72%);
+  --gradient-2: hsl(353, 100%, 62%);
+
+  --gradient-3: hsl(237, 17%, 21%);
+  --gradient-4: hsl(237, 23%, 32%);
+}
+
+.dropdown-menu {
+  z-index: 1002;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.down-icon {
+  font-size: 0.75rem;
+}
+
+#top-container {
+  height: 600px;
+  background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
+  border-radius: 0 0 0 90px;
+  z-index: 1;
+}
+
+.top-image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/bg-pattern-intro-desktop.svg");
+  background-size: 3000px;
+  background-position: 30% 51%;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 90px;
+}
+
+.top-navbar {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.navbar-brand {
+  font-size: 2.3rem;
+}
+
+.btn-login {
+  color: var(--neutral-color-1);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  background: none;
+  border: none;
+  border-radius: 20px;
+}
+
+.btn-login:hover {
+  background-color: var(--neutral-color-1);
+  color: var(--primary-color-1);
+}
+
+.btn-signup {
+  color: var(--primary-color-1);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  background-color: var(--neutral-color-1);
+  border: none;
+  border-radius: 20px;
+}
+
+.btn-signup:hover {
+  background: none;
+  color: var(--neutral-color-1);
+}
+
+.intro {
+  padding-top: 90px;
+}
+
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .btn-login {
+    color: var(--neutral-color-4);
+  }
+
+  .btn-signup {
+    background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
+    color: var(--neutral-color-1);
+  }
+
+  .btn-signup:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .down-icon {
+    color: var(--primary-color-1);
+  }
+
+  .intro {
+    padding-top: 0;
+  }
+
+  .hamburger-menu {
+    background-color: white;
+    padding: 30px 0;
+  }
+
+  .hamburger-menu-item {
+    color: var(--neutral-color-4);
+    opacity: 1;
+  }
+
+  .hamburger-menu-item:hover {
+    color: var(--neutral-color-4);
+  }
+
+  .hamburger-menu-item:focus {
+    color: var(--neutral-color-4);
+  }
+}
+.intro-heading {
+  color: var(--neutral-color-1);
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.intro-desc {
+  color: var(--neutral-color-2);
+  font-size: 1.1rem;
+}
+
+.btn-start {
+  color: var(--primary-color-1);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  background-color: var(--neutral-color-1);
+  border: none;
+  border-radius: 20px;
+}
+
+.btn-learn {
+  color: var(--neutral-color-1);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  background: none;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.btn-start:hover {
+  background: none;
+  color: var(--neutral-color-1);
+  border: 1px solid white;
+}
+
+.btn-learn:hover {
+  border: none;
+  background-color: var(--neutral-color-1);
+  color: var(--primary-color-1);
+}

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <!-- link to bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- link to icon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images\\favicon-32x32.png"
+    />
+
+    <!-- link to css -->
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <!-- link to fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/7ff7410141.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Blogr</title>
+  </head>
+  <body>
+    <section id="top-container">
+      <div class="top-image">
+        <nav class="navbar navbar-expand-lg navbar-dark top-navbar py-5">
+          <div class="container-fluid container px-5">
+            <a class="navbar-brand me-5" href="#">Blogr</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+              onclick="toggleIntro()"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+              class="collapse navbar-collapse hamburger-menu"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown me-lg-3 mx-sm-auto">
+                  <a
+                    class="nav-link dropdown-toggle hamburger-menu-item"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    >Product <i class="fa-solid fa-angle-down down-icon"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown me-lg-3 mx-sm-auto">
+                  <a
+                    class="nav-link dropdown-toggle hamburger-menu-item"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    >Company <i class="fa-solid fa-angle-down down-icon"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown mx-sm-auto">
+                  <a
+                    class="nav-link dropdown-toggle hamburger-menu-item"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    href="#"
+                    >Connect <i class="fa-solid fa-angle-down down-icon"></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <hr class="d-lg-none w-50 mx-auto" />
+              <div
+                class="ms-lg-auto justify-content-center d-lg-flex d-grid gap-2"
+              >
+                <button
+                  class="btn btn-primary btn-login px-lg-5 px-sm-4 py-2 col-lg-auto"
+                  type="button"
+                >
+                  Login
+                </button>
+                <button
+                  class="btn btn-primary btn-signup px-lg-5 px-sm-4 py-2 col-lg-auto"
+                  type="button"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="intro container-fluid container text-center">
+          <h1 class="intro-heading">A modern publishing platform</h1>
+          <p class="intro-desc">
+            Grow your audience and build your online brand
+          </p>
+          <div class="ms-auto my-5">
+            <button
+              class="btn btn-primary btn-start me-2 px-3 py-2"
+              type="button"
+            >
+              Start for Free
+            </button>
+            <button class="btn btn-primary btn-learn px-3 py-2" type="button">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="desc-1">
+      <h2>Designed for the future</h2>
+
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <h3>Introducing an extensible editor</h3>
+            <p>
+              Blogr features an exceedingly intuitive interface which lets you
+              focus on one thing: creating content. The editor supports
+              management of multiple blogs and allows easy manipulation of
+              embeds such as images, videos, and Markdown. Extensibility with
+              plugins and themes provide easy ways to add functionality or
+              change the looks of a blog.
+            </p>
+          </div>
+          <div class="row">
+            <h3>Robust content management</h3>
+            <p>
+              Flexible content management enables users to easily move through
+              posts. Increase the usability of your blog by adding customized
+              categories, sections, format, or flow. With this functionality,
+              you’re in full control.
+            </p>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+    </section>
+    <section id="desc-2">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <h2>State of the Art Infrastructure</h2>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="desc-3">
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <div class="row">
+            <h3>Free, open, simple</h3>
+            <p>
+              Blogr is a free and open source application backed by a large
+              community of helpful developers. It supports features such as code
+              syntax highlighting, RSS feeds, social media integration,
+              third-party commenting tools, and works seamlessly with Google
+              Analytics. The architecture is clean and is relatively easy to
+              learn.
+            </p>
+          </div>
+          <div class="row"></div>
+          <h3>Powerful tooling</h3>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="bottom-container">
+      <nav>
+        Product Overview Pricing Marketplace Features Integrations Company About
+        Team Blog Careers Connect Contact Newsletter LinkedIn
+      </nav>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
