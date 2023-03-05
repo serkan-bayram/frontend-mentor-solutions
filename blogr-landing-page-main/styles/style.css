@@ -17,6 +17,8 @@
   --gradient-4: hsl(237, 23%, 32%);
 }
 
+/* top-container */
+
 .dropdown-menu {
   z-index: 1002;
 }
@@ -89,6 +91,48 @@
   padding-top: 90px;
 }
 
+.intro-heading {
+  color: var(--neutral-color-1);
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.intro-desc {
+  color: var(--neutral-color-2);
+  font-size: 1.1rem;
+}
+
+.btn-start {
+  color: var(--primary-color-1);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  background-color: var(--neutral-color-1);
+  border: none;
+  border-radius: 20px;
+}
+
+.btn-learn {
+  color: var(--neutral-color-1);
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  background: none;
+  border-radius: 20px;
+  border: 1px solid white;
+}
+
+.btn-start:hover {
+  background: none;
+  color: var(--neutral-color-1);
+  border: 1px solid white;
+}
+
+.btn-learn:hover {
+  border: none;
+  background-color: var(--neutral-color-1);
+  color: var(--primary-color-1);
+}
+
 @media only screen and (min-width: 576px) and (max-width: 992px) {
   .btn-login {
     color: var(--neutral-color-4);
@@ -130,44 +174,46 @@
     color: var(--neutral-color-4);
   }
 }
-.intro-heading {
-  color: var(--neutral-color-1);
+
+/* desc-1 */
+
+#desc-1 {
+  height: 700px;
+  margin-top: 100px;
+}
+
+.desc-1-heading {
+  color: var(--primary-color-3);
   font-family: "Overpass", sans-serif;
   font-weight: 600;
-  font-size: 4rem;
 }
 
-.intro-desc {
-  color: var(--neutral-color-2);
-  font-size: 1.1rem;
+.laptop-image {
+  background-image: url("../images/illustration-editor-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+  width: 500px;
 }
 
-.btn-start {
-  color: var(--primary-color-1);
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  background-color: var(--neutral-color-1);
-  border: none;
-  border-radius: 20px;
+@media only screen and (min-width: 576px) and (max-width: 992px) {
+  .laptop-image {
+    background-image: url("../images/illustration-editor-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    width: 400px;
+  }
 }
 
-.btn-learn {
-  color: var(--neutral-color-1);
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  background: none;
-  border-radius: 20px;
-  border: 1px solid white;
+.desc-1-sub-heading {
+  color: var(--primary-color-3);
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  padding-bottom: 10px;
 }
 
-.btn-start:hover {
-  background: none;
-  color: var(--neutral-color-1);
-  border: 1px solid white;
-}
-
-.btn-learn:hover {
-  border: none;
-  background-color: var(--neutral-color-1);
-  color: var(--primary-color-1);
+.desc-1-sub-heading + p {
+  color: var(--neutral-color-3);
+  line-height: 1.8;
 }
