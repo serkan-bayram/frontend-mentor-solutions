@@ -31,6 +31,11 @@
   font-size: 0.75rem;
 }
 
+.dropdown-item:hover {
+  font-weight: bold;
+  background-color: inherit;
+}
+
 #top-container {
   height: 600px;
   background: linear-gradient(to right, var(--gradient-1), var(--gradient-2));
@@ -69,8 +74,7 @@
 }
 
 .btn-login:hover {
-  background-color: var(--neutral-color-1);
-  color: var(--primary-color-1);
+  background-color: inherit;
 }
 
 .btn-signup {
@@ -83,8 +87,12 @@
 }
 
 .btn-signup:hover {
-  background: none;
+  background: rgba(255, 255, 255, 0.3);
   color: var(--neutral-color-1);
+}
+
+.hamburger-menu-item:focus {
+  text-decoration: underline;
 }
 
 .intro {
@@ -122,9 +130,8 @@
 }
 
 .btn-start:hover {
-  background: none;
+  background: rgba(255, 255, 255, 0.3);
   color: var(--neutral-color-1);
-  border: 1px solid white;
 }
 
 .btn-learn:hover {
@@ -136,6 +143,10 @@
 @media only screen and (min-width: 576px) and (max-width: 992px) {
   .btn-login {
     color: var(--neutral-color-4);
+  }
+
+  .btn-login:hover {
+    color: black;
   }
 
   .btn-signup {
@@ -156,6 +167,16 @@
     padding-top: 0;
   }
 
+  .dropdown-menu {
+    background-color: rgb(235, 225, 225);
+    padding: 0 3rem;
+  }
+
+  .dropdown-item {
+    color: var(--neutral-color-3);
+    text-align: center;
+  }
+
   .hamburger-menu {
     background-color: white;
     padding: 30px 0;
@@ -163,15 +184,22 @@
 
   .hamburger-menu-item {
     color: var(--neutral-color-4);
+    text-align: center;
+    text-decoration: none;
+
     opacity: 1;
   }
 
   .hamburger-menu-item:hover {
-    color: var(--neutral-color-4);
+    color: var(--neutral-color-2);
+    text-align: center;
+    text-decoration: none;
   }
 
   .hamburger-menu-item:focus {
-    color: var(--neutral-color-4);
+    text-align: center;
+    color: var(--neutral-color-2);
+    text-decoration: none;
   }
 }
 
@@ -194,6 +222,7 @@
   background-size: contain;
   height: 500px;
   width: 500px;
+  transform: translateX(-5%) scale(1.4);
 }
 
 @media only screen and (min-width: 576px) and (max-width: 992px) {
@@ -203,6 +232,7 @@
     background-size: contain;
     height: 400px;
     width: 400px;
+    transform: translateX(0) scale(1);
   }
 }
 
@@ -222,8 +252,13 @@
 #desc-2 {
   background: linear-gradient(to right, var(--gradient-3), var(--gradient-4));
   border-radius: 0 90px 0 90px;
-  height: 400px;
+  min-height: 400px;
   margin: 180px 0;
+  position: relative;
+}
+
+.desc-2-row {
+  margin-right: 0;
 }
 
 .desc-2-heading {
@@ -241,40 +276,102 @@
   height: 400px;
 }
 
-.image-wrapper {
-  position: relative;
+.phones-image {
+  transform: translate(14%, -12%);
+  z-index: 2;
 }
 
-.phones-image {
+.circle-pattern-wrapper {
+  height: 400px;
+  width: 100%;
   position: absolute;
-  top: -75px;
-  left: 90px;
+  overflow: hidden;
+}
+
+.circle-pattern {
+  position: absolute;
+  transform: translate(-20%, -50%) scale(1.1);
 }
 
 @media only screen and (min-width: 576px) and (max-width: 992px) {
   #desc-2 {
     height: 600px;
+    position: relative;
+  }
+
+  .circle-pattern-wrapper {
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
   }
 
   .phones-column {
     height: 300px;
   }
 
-  .image-wrapper {
-    position: relative;
-  }
-
   .phones-image {
-    position: absolute;
-    width: 400px;
-    height: 400px;
-    top: -180px;
-    left: 90px;
+    transform: translate(12%, -40%) scale(0.8);
   }
 
   .desc-2-p {
     width: 60%;
   }
+
+  .circle-pattern {
+    transform: translate(-25%, -45%) scale(0.7);
+    position: absolute;
+  }
 }
 
 /* desc-3 */
+
+.desc-3-heading {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  color: var(--primary-color-3);
+}
+
+@media only screen and (min-width: 992px) {
+  #desc-3 {
+    margin: 200px 0;
+  }
+
+  .desc-3-lg-image {
+    transform: translate(-30%, -15%);
+  }
+
+  .desc-3-first-col {
+    height: 600px;
+  }
+}
+
+/* bottom container */
+#bottom-container {
+  background-color: var(--neutral-color-4);
+}
+
+.bottom-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+}
+
+.bottom-heading {
+  color: var(--neutral-color-1);
+}
+
+.bottom-anchor {
+  color: var(--neutral-color-2);
+  text-decoration: none;
+}
+
+.bottom-anchor:hover {
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 992px) {
+  #bottom-container {
+    margin-top: 100px;
+    border-radius: 0 90px 0 0;
+  }
+}

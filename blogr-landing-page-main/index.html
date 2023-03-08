@@ -72,14 +72,15 @@
                     href="#"
                     >Product <i class="fa-solid fa-angle-down down-icon"></i>
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  <ul class="dropdown-menu py-md-2 px-md-1">
+                    <li><a class="dropdown-item py-2" href="#">Action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item py-2" href="#">Another action</a>
                     </li>
-                    <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item py-2" href="#"
+                        >Something else here</a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -92,14 +93,15 @@
                     href="#"
                     >Company <i class="fa-solid fa-angle-down down-icon"></i>
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  <ul class="dropdown-menu py-md-2 px-md-1">
+                    <li><a class="dropdown-item py-2" href="#">Action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item py-2" href="#">Another action</a>
                     </li>
-                    <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item py-2" href="#"
+                        >Something else here</a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -112,14 +114,15 @@
                     href="#"
                     >Connect <i class="fa-solid fa-angle-down down-icon"></i>
                   </a>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
+                  <ul class="dropdown-menu py-md-2 px-md-1">
+                    <li><a class="dropdown-item py-2" href="#">Action</a></li>
                     <li>
-                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item py-2" href="#">Another action</a>
                     </li>
-                    <li><hr class="dropdown-divider" /></li>
                     <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item py-2" href="#"
+                        >Something else here</a
+                      >
                     </li>
                   </ul>
                 </li>
@@ -204,15 +207,22 @@
 
     <section id="desc-2">
       <div class="desc-2-row row">
-        <div class="phones-column col-sm-12 col-md-6">
-          <div class="image-wrapper">
-            <img
-              class="phones-image"
-              src="images/illustration-phones.svg"
-              alt="phones-image"
-            />
-          </div>
+        <div class="circle-pattern-wrapper">
+          <img
+            class="circle-pattern"
+            src="images/bg-pattern-circles.svg"
+            alt="backdrop-image"
+          />
         </div>
+
+        <div class="phones-column col-sm-12 col-md-6">
+          <img
+            class="phones-image"
+            src="images/illustration-phones.svg"
+            alt="phones-image"
+          />
+        </div>
+
         <div class="desc-2-row-column col-sm-12 col-md-6 my-md-auto">
           <h2 class="desc-2-heading text-sm-center text-md-start mb-md-4">
             State of the Art Infrastructure
@@ -229,23 +239,38 @@
     </section>
 
     <section id="desc-3">
-      <div class="row">
-        <div class="col"></div>
-        <div class="col">
-          <div class="row">
-            <h3>Free, open, simple</h3>
-            <p>
-              Blogr is a free and open source application backed by a large
-              community of helpful developers. It supports features such as code
-              syntax highlighting, RSS feeds, social media integration,
-              third-party commenting tools, and works seamlessly with Google
-              Analytics. The architecture is clean and is relatively easy to
-              learn.
-            </p>
-          </div>
-          <div class="row"></div>
-          <h3>Powerful tooling</h3>
-          <p>
+      <div class="row" style="margin-right: 0px">
+        <div class="col-sm-12 col-md-6 desc-3-first-col">
+          <img
+            class="mx-sm-auto d-md-none d-sm-block"
+            src="images/illustration-laptop-mobile.svg"
+            alt="laptop-small-image"
+          />
+
+          <img
+            class="desc-3-lg-image d-md-block d-sm-none"
+            src="images/illustration-laptop-desktop.svg"
+            alt="laptop-big-image"
+          />
+        </div>
+        <div class="col-sm-12 col-md-6 mt-sm-5 my-md-auto px-sm-5">
+          <h3 class="desc-3-heading mb-sm-4 text-sm-center text-md-start">
+            Free, open, simple
+          </h3>
+          <p
+            class="desc-3-p text-sm-center text-md-start text-muted mb-sm-5 lh-lg"
+          >
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+          <h3 class="desc-3-heading mb-sm-4 text-sm-center text-md-start">
+            Powerful tooling
+          </h3>
+          <p class="desc-3-p text-sm-center text-md-start text-muted lh-lg">
             Batteries included. We built a simple and straightforward CLI tool
             that makes customization and deployment a breeze, but capable of
             producing even the most complicated sites.
@@ -253,10 +278,73 @@
         </div>
       </div>
     </section>
-    <section id="bottom-container">
+    <section id="bottom-container" class="p-5">
       <nav>
-        Product Overview Pricing Marketplace Features Integrations Company About
-        Team Blog Careers Connect Contact Newsletter LinkedIn
+        <div class="row">
+          <div
+            class="col-sm-12 col-md-3 mb-sm-5 navbar-brand text-white text-center bottom-brand"
+          >
+            Blogr
+          </div>
+          <div class="col-sm-12 col-md-3 text-center mb-sm-4">
+            <ul class="ps-0">
+              <li class="list-group-item mb-3 bottom-heading">
+                <strong>Product</strong>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">Overview</a>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">Pricing</a>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">Marketplace</a>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">Features</a>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">Integrations</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-sm-12 col-md-3 mb-sm-4 text-center">
+            <ul class="ps-0">
+              <li class="list-group-item mb-3 bottom-heading">
+                <strong>Company</strong>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">About</a>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">Team</a>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">Blog</a>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">Careers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-3 mb-sm-4 text-center">
+            <ul class="ps-0">
+              <li class="list-group-item mb-3 bottom-heading">
+                <strong>Connect</strong>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">Contact</a>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">Newsletter</a>
+              </li>
+              <li class="list-group-item">
+                <a class="bottom-anchor" href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </section>
 
