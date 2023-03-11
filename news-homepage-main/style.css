@@ -1,0 +1,116 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --primary-clr-1: hsl(35, 77%, 62%);
+  --primary-clr-2: hsl(5, 85%, 63%);
+
+  --neutral-clr-1: hsl(36, 100%, 99%);
+  --neutral-clr-2: hsl(233, 8%, 79%);
+  --neutral-clr-3: hsl(236, 13%, 42%);
+  --neutral-clr-4: hsl(240, 100%, 5%);
+
+  --primary-font: "Inter", sans-serif;
+
+  --regular-weight: 400;
+  --bold-weight: 700;
+  --extra-bold-weight: 800;
+}
+
+p {
+  font-size: 0.938rem;
+}
+
+/* header */
+
+@media screen and (max-width: 960px) {
+  .collapsing {
+    transition: none;
+    /* overriding bootstrap collapse animation */
+  }
+
+  .navbar-toggler {
+    position: relative;
+    z-index: 2;
+  }
+
+  .side-nav {
+    background-color: #fff;
+    width: 70%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .shadow {
+    background: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .navbar-nav {
+    margin-top: 10rem;
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  .navbar-nav a {
+    color: var(--neutral-clr-4);
+  }
+}
+
+.nav-item a:hover {
+  color: var(--primary-clr-2);
+}
