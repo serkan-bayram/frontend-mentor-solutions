@@ -41,7 +41,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg px-5">
+      <nav class="navbar navbar-expand-lg navbar-light align-center">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo.svg" alt="Logo" />
@@ -50,29 +50,51 @@
             class="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span>
+              <img src="assets/images/icon-menu.svg" alt="Open sidebar icon" />
+            </span>
           </button>
-          <div class="shadow collapse" id="navbarNav"></div>
-          <div class="collapse navbar-collapse side-nav" id="navbarNav">
-            <ul class="ms-lg-auto navbar-nav">
-              <li class="nav-item mx-lg-2 mb-sm-2">
+          <button
+            class="collapse navbar-toggler exit-sidebar"
+            id="navbarSupportedContent"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span>
+              <img
+                src="assets/images/icon-menu-close.svg"
+                alt="Exit sidebar icon"
+              />
+            </span>
+          </button>
+          <div class="collapse shadow-effect" id="navbarSupportedContent"></div>
+          <div
+            class="collapse navbar-collapse sidebar"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Home</a>
               </li>
-              <li class="nav-item mx-lg-2 mb-sm-2">
+              <li class="nav-item">
                 <a class="nav-link" href="#">New</a>
               </li>
-              <li class="nav-item mx-lg-2 mb-sm-2">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Popular</a>
               </li>
-              <li class="nav-item mx-lg-2 mb-sm-2">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Trending</a>
               </li>
-              <li class="nav-item mx-lg-2 mb-sm-2">
+              <li class="nav-item">
                 <a class="nav-link" href="#">Categories</a>
               </li>
             </ul>
@@ -81,57 +103,37 @@
       </nav>
     </header>
 
-    <main class="container-fluid">
-      <div class="row px-5">
-        <div class="col-lg-9">
+    <main>
+      <div class="align-center mx-3">
+        <div class="container-fluid">
           <div class="row">
-            <div class="col-sm-12 image-web-3 border border-2"></div>
-            <div class="col-sm-12">
+            <div class="col-12 col-md-9">
               <div class="row">
-                <div class="col-lg-6 col-sm-12 p-0 pt-4">
-                  <div class="intro-bottom lh-1">
-                    <p>The Bright Future of Web 3.0?</p>
-                  </div>
-                </div>
-                <div class="col-lg-6 col-sm-12 p-0 pt-4">
-                  <div
-                    class="intro-desc d-flex flex-column justify-content-between"
-                  >
-                    <p>
-                      We dive into the next evolution of the web that claims to
-                      put the power of the platforms back into the hands of the
-                      people. But is it really fulfilling its promise?
-                    </p>
-                    <button
-                      class="btn btn-danger btn-lg btn-readmore rounded-0"
-                    >
-                      READ MORE
-                    </button>
-                  </div>
-                </div>
+                <div class="col-12 col-md-12"></div>
+                <div class="col-12 col-md-6"></div>
+                <div class="col-12 col-md-6"></div>
               </div>
             </div>
+            <div class="col-12 col-md-3"></div>
           </div>
         </div>
-        <div class="col-lg-3 border border-3 border-primary"></div>
       </div>
     </main>
 
     <footer>
-      <div class="split">
-        <div></div>
-        <div></div>
-        <div></div>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
       </div>
     </footer>
 
-    Home New Popular Trending Categories Read more New Hydrogen VS Electric Cars
-    Will hydrogen-fueled cars ever catch up to EVs? The Downsides of AI Artistry
-    What are the possible adverse effects of on-demand AI image generation? Is
-    VC Funding Drying Up? Private funding by VC firms is down 50% YOY. We take a
-    look at what that means. 01 Reviving Retro PCs What happens when old PCs are
-    given modern upgrades? 02 Top 10 Laptops of 2022 Our best picks for various
-    needs and budgets. 03 The Growth of Gaming How the pandemic has sparked
-    fresh opportunities.
+    Read more New Hydrogen VS Electric Cars Will hydrogen-fueled cars ever catch
+    up to EVs? The Downsides of AI Artistry What are the possible adverse
+    effects of on-demand AI image generation? Is VC Funding Drying Up? Private
+    funding by VC firms is down 50% YOY. We take a look at what that means. 01
+    Reviving Retro PCs What happens when old PCs are given modern upgrades? 02
+    Top 10 Laptops of 2022 Our best picks for various needs and budgets. 03 The
+    Growth of Gaming How the pandemic has sparked fresh opportunities.
   </body>
 </html>
