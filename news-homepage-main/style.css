@@ -82,7 +82,7 @@ p {
 }
 
 .nav-link:hover {
-  color: var(--primary-clr-1);
+  color: var(--primary-clr-2);
 }
 
 @media screen and (min-width: 300px) and (max-width: 992px) {
@@ -148,20 +148,6 @@ p {
   max-width: 100%;
 }
 
-@media screen and (min-width: 673px) and (max-width: 992px) {
-  .img-mobile {
-    max-width: 70%;
-  }
-
-  .main-heading {
-    max-width: 70%;
-  }
-
-  .desc-wrapper {
-    max-width: 70%;
-  }
-}
-
 .main-heading {
   font-family: var(--primary-font);
   font-weight: var(--extra-bold-weight);
@@ -206,5 +192,60 @@ p {
 
   .desc-wrapper p {
     font-size: 1.1rem;
+  }
+}
+
+.new-section-container {
+  background-color: var(--neutral-clr-4);
+  font-family: var(--primary-font);
+  padding: 1.25em 1.5em;
+  height: 100%;
+}
+
+.new-section-container hr {
+  color: var(--neutral-clr-1);
+}
+
+.new-section-container h2 {
+  color: var(--primary-clr-1);
+  font-weight: var(--extra-bold-weight);
+  font-size: 1.8rem;
+  padding-bottom: 0.8em;
+}
+
+.new-section-container a {
+  text-decoration: none;
+  color: var(--neutral-clr-1);
+  font-weight: var(--bold-weight);
+  font-size: 1.2rem;
+}
+
+.new-section-container a:hover {
+  color: var(--primary-clr-1);
+  transition: ease-in 0.1s;
+}
+
+.new-section-container p {
+  color: var(--neutral-clr-2);
+  font-weight: var(--regular-weight);
+  font-size: 0.9rem;
+  line-height: 1.8em;
+}
+
+@media screen and (min-width: 673px) and (max-width: 992px) {
+  .img-mobile {
+    max-width: 70%;
+  }
+
+  .main-heading {
+    max-width: 70%;
+  }
+
+  .desc-wrapper {
+    max-width: 70%;
+  }
+
+  .new-section-container {
+    max-width: 70%;
   }
 }
