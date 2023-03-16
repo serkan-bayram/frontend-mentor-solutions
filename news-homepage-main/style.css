@@ -104,14 +104,14 @@ p {
   }
 
   .exit-sidebar {
-    position: absolute;
+    position: fixed;
     right: 15px;
     top: 15px;
     z-index: 2;
   }
 
   .shadow-effect {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.6);
@@ -120,7 +120,7 @@ p {
   }
 
   .sidebar {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: var(--neutral-clr-1);
