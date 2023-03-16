@@ -63,6 +63,10 @@ h6 {
   --extra-bold-weight: 800;
 }
 
+body {
+  font-family: var(--primary-font);
+}
+
 p {
   font-size: 0.938rem;
 }
@@ -76,7 +80,6 @@ p {
 /* header */
 .nav-link {
   margin-left: 0.9em;
-  font-family: var(--primary-font);
   font-weight: var(--regular-weight);
   color: var(--neutral-clr-3);
 }
@@ -144,12 +147,11 @@ p {
   background-repeat: no-repeat;
 }
 
-.img-mobile {
+.main-img-mobile {
   max-width: 100%;
 }
 
 .main-heading {
-  font-family: var(--primary-font);
   font-weight: var(--extra-bold-weight);
   font-size: 3rem;
   color: var(--neutral-clr-4);
@@ -158,14 +160,12 @@ p {
 }
 
 .desc-wrapper p {
-  font-family: var(--primary-font);
   font-weight: var(--regular-weight);
   color: var(--neutral-clr-3);
   font-size: 1.2rem;
 }
 
 .btn-readmore {
-  font-family: var(--primary-font);
   font-weight: var(--bold-weight);
   font-size: 1rem;
   letter-spacing: 0.25em;
@@ -197,7 +197,6 @@ p {
 
 .new-section-container {
   background-color: var(--neutral-clr-4);
-  font-family: var(--primary-font);
   padding: 1.25em 1.5em;
   height: 100%;
 }
@@ -232,8 +231,50 @@ p {
   line-height: 1.8em;
 }
 
+/* footer */
+.topics {
+  display: flex;
+}
+
+.topics-img {
+  display: block;
+  max-width: 100%;
+  width: 7em;
+  height: 100%;
+}
+
+.topics-text {
+  padding-left: 1.2em;
+}
+
+.topics-rank {
+  font-weight: var(--bold-weight);
+  font-size: 2rem;
+  color: var(--neutral-clr-2);
+  margin-bottom: 2px;
+}
+
+.topics-heading a {
+  font-weight: var(--extra-bold-weight);
+  font-size: 1.1rem;
+  color: var(--neutral-clr-4);
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+
+.topics-heading a:hover {
+  color: var(--primary-clr-2);
+}
+
+.topics-desc {
+  font-weight: var(--regular-weight);
+  color: var(--neutral-clr-3);
+  line-height: 1.7em;
+  margin-bottom: 0;
+}
+
 @media screen and (min-width: 673px) and (max-width: 992px) {
-  .img-mobile {
+  .main-img-mobile {
     max-width: 70%;
   }
 
@@ -246,6 +287,10 @@ p {
   }
 
   .new-section-container {
+    max-width: 70%;
+  }
+
+  .topics {
     max-width: 70%;
   }
 }
