@@ -1,0 +1,123 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --neutral-clr-1: 0, 0%, 98%;
+  --neutral-clr-2: 0, 0%, 41%;
+  --neutral-clr-3: 0, 0%, 8%;
+
+  --fs-1: 1rem;
+  --fs-2: 1.125rem;
+  --fs-3: 1.25rem;
+  --fs-4: 1.5rem;
+  --fs-5: 1.75rem;
+  --fs-6: 2rem;
+  --fs-7: 4rem;
+
+  --font-default: "Epilogue", sans-serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+}
+
+body {
+  font-family: var(--font-default);
+  font-size: var(--fs-2);
+  color: hsl(var(--neutral-clr-3));
+}
+
+/* navbar */
+
+.nav-item {
+  font-size: var(--fs-1);
+  color: hsl(var(--neutral-clr-2));
+}
+
+.nav-item:hover a {
+  color: hsl(var(--neutral-clr-3));
+  transition: 0s ease-in;
+}
+
+.nav-item a:focus .arrow {
+  transform: rotate(180deg);
+}
+
+.nav-item .nav-link::after {
+  display: none;
+}
+
+.dropdown-item {
+  display: flex;
+}
+
+.dropdown-item:hover {
+  background-color: white;
+}
+
+.dropdown-item svg {
+  padding-left: 0.5em;
+  width: 30%;
+}
+
+.dropdown-item p {
+  color: hsl(var(--neutral-clr-2));
+  margin-bottom: 0.3em;
+  width: 70%;
+}
+
+.btn-login,
+.btn-register {
+  color: hsl(var(--neutral-clr-2));
+}
+
+.btn-login:hover,
+.btn-register:hover {
+  color: hsl(var(--neutral-clr-3));
+  transition: 0s ease-in;
+  background: none;
+}
