@@ -51,14 +51,6 @@ h6 {
   --neutral-clr-2: 0, 0%, 41%;
   --neutral-clr-3: 0, 0%, 8%;
 
-  --fs-1: 1rem;
-  --fs-2: 1.125rem;
-  --fs-3: 1.25rem;
-  --fs-4: 1.5rem;
-  --fs-5: 1.75rem;
-  --fs-6: 2rem;
-  --fs-7: 4rem;
-
   --font-default: "Epilogue", sans-serif;
 
   --fw-medium: 500;
@@ -67,14 +59,14 @@ h6 {
 
 body {
   font-family: var(--font-default);
-  font-size: var(--fs-2);
+  font-size: 1.125rem;
   color: hsl(var(--neutral-clr-3));
 }
 
 /* navbar */
 
 .nav-item {
-  font-size: var(--fs-1);
+  font-size: 1rem;
   color: hsl(var(--neutral-clr-2));
 }
 
@@ -93,6 +85,7 @@ body {
 
 .dropdown-item {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .dropdown-item:hover {
@@ -100,19 +93,19 @@ body {
 }
 
 .dropdown-item svg {
-  padding-left: 0.5em;
-  width: 30%;
+  width: 20%;
 }
 
 .dropdown-item p {
   color: hsl(var(--neutral-clr-2));
-  margin-bottom: 0.3em;
-  width: 70%;
+  margin-bottom: 0;
+  width: 80%;
 }
 
 .btn-login,
 .btn-register {
   color: hsl(var(--neutral-clr-2));
+  border-radius: 0.8em;
 }
 
 .btn-login:hover,
@@ -120,4 +113,91 @@ body {
   color: hsl(var(--neutral-clr-3));
   transition: 0s ease-in;
   background: none;
+}
+
+.shadow {
+  position: absolute;
+}
+
+.dropdown-menu {
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  padding: 1em 0 1em;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 60%;
+    background-color: hsl(var(--neutral-clr-1));
+  }
+
+  .shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 40%;
+    background-color: hsl(var(--neutral-clr-3), 0.6);
+  }
+
+  .navbar-nav {
+    padding-top: 3em;
+    display: flex;
+  }
+
+  .nav-item a {
+    padding-left: 1.25em;
+  }
+
+  .close-sidebar {
+    position: fixed;
+    top: 0.4em;
+    right: 1.3em;
+    z-index: 2;
+    transition: 0s;
+    border: none;
+    height: 2em;
+  }
+
+  .open-sidebar {
+    height: 2em;
+    border: none;
+  }
+
+  .dropdown-menu {
+    background: hsl(var(--neutral-clr-1));
+    border: none;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .dropdown-menu li {
+    padding-left: 1.5em;
+  }
+
+  .dropdown-item {
+    max-width: 12em;
+  }
+
+  .navbar-collapse {
+    transition: 0s;
+  }
+
+  .nav-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 15em;
+    margin-inline: auto;
+  }
+
+  .btn-login,
+  .btn-register {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
 }

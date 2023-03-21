@@ -36,7 +36,7 @@
     <title>Snap</title>
   </head>
   <body>
-    <div class="container-fluid px-lg-4">
+    <div class="container-fluid px-lg-4 position-relative">
       <nav class="navbar navbar-expand-lg pt-lg-4">
         <div class="container-fluid">
           <a class="navbar-brand py-0" href="index.html">
@@ -48,7 +48,7 @@
             </svg>
           </a>
           <button
-            class="navbar-toggler"
+            class="open-sidebar navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent"
@@ -56,9 +56,37 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <svg width="32" height="18" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#151515" fill-rule="evenodd">
+                <path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z" />
+              </g>
+            </svg>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <button
+            class="close-sidebar collapse navbar-toggler"
+            id="navbarSupportedContent"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <svg width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+              <g fill="#151515" fill-rule="evenodd">
+                <path d="m2.393.98 22.628 22.628-1.414 1.414L.979 2.395z" />
+                <path d="M.98 23.607 23.609.979l1.414 1.414L2.395 25.021z" />
+              </g>
+            </svg>
+          </button>
+          <div
+            class="shadow collapse navbar-collapse"
+            id="navbarSupportedContent"
+          ></div>
+          <div
+            class="sidebar collapse navbar-collapse"
+            id="navbarSupportedContent"
+          >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown ms-lg-4 me-lg-4">
                 <a
@@ -196,16 +224,14 @@
                 <a class="nav-link" href="#">About</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="nav-buttons d-lg-flex">
               <button
                 class="btn-login btn border-none px-lg-3 py-lg-2 me-lg-4"
                 type="submit"
               >
                 Login
               </button>
-              <button
-                class="btn-register btn btn-outline-dark rounded-4 px-lg-3"
-              >
+              <button class="btn-register btn btn-outline-dark px-lg-3">
                 Register
               </button>
             </form>
