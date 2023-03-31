@@ -160,9 +160,6 @@ body {
 }
 
 @media (max-width: 1200px) {
-  body{
-    padding-top: 10em;
-  }
   
   .img-desktop {
     display: none;
