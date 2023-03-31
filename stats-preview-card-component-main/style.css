@@ -58,7 +58,7 @@ img {
 }
 
 body {
-  height: 100vh;
+  height: 100dvh;
   background: var(--main-clr);
   display: flex;
   justify-content: center;
