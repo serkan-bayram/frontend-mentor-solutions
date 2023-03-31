@@ -63,7 +63,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: auto;
+
 }
 
 .main {
@@ -160,6 +160,10 @@ body {
 }
 
 @media (max-width: 1200px) {
+  body{
+    padding-top: 10em;
+  }
+  
   .img-desktop {
     display: none;
   }
