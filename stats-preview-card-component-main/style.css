@@ -171,7 +171,6 @@ body {
 
   .main {
     width: auto;
-    max-height: 80%;
     padding-inline: 2em;
     flex-direction: column-reverse;
   }
